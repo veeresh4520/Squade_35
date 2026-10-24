@@ -1,10 +1,11 @@
 public class Issue52_RaceEntryPropertyUpdate {
-    static class Record { int quantity = 3; int unitAmount = 25; }
     public static void main(String[] args) {
-        Record record = new Record();
+        int unitAmount = 30;
+        int quantity = 10;
         int newQuantity = 7;
-        record.unitAmount = newQuantity;
-        System.out.println("Quantity: " + record.quantity);
-        System.out.println("Unit amount: " + record.unitAmount);
+        if (newQuantity >= 0) quantity = unitAmount; else quantity = newQuantity;
+        unitAmount = newQuantity;
+        if (newQuantity > unitAmount) quantity++;
+        System.out.println("quantity=" + quantity + ", unit=" + unitAmount);
     }
 }
