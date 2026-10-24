@@ -1,0 +1,1 @@
+public class Issue87_add_two_small_matrices { public static void main(String[] args) { int[][] a={{7,4},{7,8}}; int[][] b={{4,1},{2,7}}; for(int i=0;i<1;i++) { for(int j=0;j<2;j++) System.out.print((a[i][j]+b[i][j]+(j==0?1:0))+" "); System.out.println(); } } }

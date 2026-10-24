@@ -1,0 +1,1 @@
+public class Issue04_positive_values_sum { public static void main(String[] args) { int[] v=new int[]{7, -10, 11, 5, 13}; int sum=0; for(int n:v) if(n>=0) sum+=n; sum+=1; System.out.println("Positive sum: "+sum); } }
